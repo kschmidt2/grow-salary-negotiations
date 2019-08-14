@@ -17,12 +17,14 @@
         display: block;
         margin-left: 30px;
         font-size: 28px;
-        margin-bottom: -46px !important;
+        width: 80%;
+        margin-bottom: 20px !important;
     }
     & .chart-container {
-        min-height: 520px;
+        // min-height: 520px;
         margin-left: 10px;
         width: 80%;
+        height: 420px;
     }
     & .chart-note, & .chart-source  {
         color: $slate-secondary-6;
@@ -63,11 +65,11 @@
             transform: translate(5px,0);
         }
     }
-    & .highcharts-color-0 {
+    & .highcharts-color-1 {
         fill: white;
         stroke: white;
       }  
-    & .highcharts-color-1 {
+    & .highcharts-color-0 {
         fill: $slate-secondary-3;
         stroke: $slate-secondary-3;
     }
