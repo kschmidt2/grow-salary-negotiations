@@ -11,7 +11,7 @@ $font-stack: 'Avenir', 'Avenir Next', 'Arial', sans-serif;
     fill: $slate-secondary-6;
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     max-width: 600px;
 }
 
@@ -20,10 +20,10 @@ $font-stack: 'Avenir', 'Avenir Next', 'Arial', sans-serif;
     text-transform: uppercase;
     font-size: 14px;
     // bottom margin should be 30px if there is no legend
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     @include sm-md-xl {
         // set this only if there is a chart title + legend
-        margin-bottom: -23px;
+        // margin-bottom: -23px;
     }
 }
 

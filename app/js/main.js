@@ -23,21 +23,23 @@ Highcharts.setOptions({
 document.addEventListener('DOMContentLoaded', function () {
     const myChart = Highcharts.chart('chart-container', {
         chart: {
-            type: 'bar',
+            type: 'column',
             styledMode: true,
             spacingBottom: 25,
-            spacingRight: 100
+            spacingRight: 100,
+            spacingLeft: -10
         }, 
         title: {
             text: null
         },
         data: {
-            googleSpreadsheetKey: '1YOKb5l2VM4aAB2r20N_1aT_1vEajYrP3U-U3A6lZbC0'
+            googleSpreadsheetKey: '1YOFW8CaXSuP8niKcC--8j8Vmv9GJVl6-HYzDD7D5GNU'
         },
         // for bar charts only
         plotOptions: {
             series: {
-                groupPadding: 0.1
+                groupPadding: 0.1,
+                stacking: 'normal'
             } 
         },
         legend: {
@@ -60,14 +62,16 @@ document.addEventListener('DOMContentLoaded', function () {
             labels: {
                 useHTML: true,
                 overflow: 'allow'
-            }
+            },
+            max: 100
         },
         credits: {
             enabled: false
         },
         tooltip: {
             shadow: false,
-            padding: 10
+            padding: 10,
+            shared: true
         },
         responsive: {
             rules: [{
@@ -80,7 +84,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 },
                 legend: {
                     align: 'left',
-                    x: -18
+                    x: 0,
+                    itemMarginTop: 0
                 },
                 tooltip: {
                     enabled: false
